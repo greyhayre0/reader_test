@@ -1,0 +1,34 @@
+.red-button {
+    background-color: #ff0000; /* Красный цвет */
+    color: white; /* Белый текст */
+    border: none; /* Убираем стандартную рамку */
+    border-radius: 8px; /* Скругление углов */
+    padding: 12px 24px; /* Внутренние отступы */
+    font-size: 16px; /* Размер текста */
+    font-weight: bold; /* Жирный текст */
+    cursor: pointer; /* Курсор-указатель при наведении */
+    text-decoration: none; /* Убираем подчеркивание у ссылки */
+    display: inline-block; /* Для правильного отображения ссылки */
+    transition: all 0.3s ease; /* Плавные переходы */
+    font-family: Arial, sans-serif; /* Шрифт */
+}
+
+/* Эффект при наведении */
+.red-button:hover {
+    background-color: #cc0000; /* Темнее красный при наведении */
+    transform: translateY(-2px); /* Легкое поднятие */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень при наведении */
+}
+
+/* Эффект при нажатии */
+.red-button:active {
+    background-color: #990000; /* Еще темнее при нажатии */
+    transform: translateY(0); /* Возвращаем на место */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Меньшая тень */
+}
+
+/* Фокус для доступности */
+.red-button:focus {
+    outline: 2px solid #ff6666; /* Контур при фокусе */
+    outline-offset: 2px; /* Отступ контура */
+}
